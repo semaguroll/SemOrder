@@ -4,4 +4,18 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Repository\Booking\" />
+    <Folder Include="Repository\Category\" />
+    <Folder Include="Repository\Food\" />
+    <Folder Include="Repository\User\" />
+    <Folder Include="Repository\Table\" />
+    <Folder Include="Repository\Order\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SemOrder.Core\SemOrder.Core.csproj" />
+    <ProjectReference Include="..\SemOrder.Model\SemOrder.Model.csproj" />
+  </ItemGroup>
+
 </Project>

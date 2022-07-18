@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
+using SemOrder.Core.Entity;
 using SemOrder.Core.Map;
 using SemOrder.Model.Entities;
 using SemOrder.Model.SeedData;
@@ -8,6 +9,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using System.Text;
+using System.Threading;
+using System.Threading.Tasks;
 
 namespace SemOrder.Model.Context
 {
@@ -52,6 +55,21 @@ namespace SemOrder.Model.Context
                 }
             }
         }
+        private Guid? GetUserId()
+        {
+            string userId = "";
+            if (_httpContextAccessor.HttpContext.User.Identity.IsAuthenticated)
+            {
+                var claims = _httpContextAccessor.HttpContext.User.Claims.ToList();
+                userId = claims?.FirstOrDefault(x => x.Type.Equals("jti", StringComparison.OrdinalIgnoreCase))?.Value;
+            }
+
+            if (userId != null)
+                return Guid.Parse(userId);
+            else
+                return Guid.Empty;
+        }
+
 
     }
 }

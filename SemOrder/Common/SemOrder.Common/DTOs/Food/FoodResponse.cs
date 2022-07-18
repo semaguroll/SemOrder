@@ -1,11 +1,13 @@
-﻿using SemOrder.Core.Entity;
+﻿using SemOrder.Common.DTOs.Base;
+using SemOrder.Common.DTOs.Category;
+using SemOrder.Common.DTOs.Order;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace SemOrder.Model.Entities
+namespace SemOrder.Common.DTOs.Food
 {
-    public class Food : CoreEntity
+    public class FoodResponse : BaseDto
     {
         public string Name { get; set; }
         public string Description { get; set; }
@@ -13,9 +15,9 @@ namespace SemOrder.Model.Entities
         public float Price { get; set; }
 
         public Guid CategoryId { get; set; }
-        public Category Category { get; set; }
+        public CategoryRequest Category { get; set; }
 
         public Guid OrderId { get; set; }
-        public Order Order { get; set; }
+        public OrderResponse Order { get; set; }
     }
 }

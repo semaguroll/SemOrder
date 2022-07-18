@@ -204,7 +204,7 @@ namespace SemOrder.Model.Migrations
                     b.HasData(
                         new
                         {
-                            ID = new Guid("7b3c470a-b0c5-4814-9a82-d2c660afcdc3"),
+                            ID = new Guid("48cdab79-b277-4dc0-a2d9-ea9ba322e731"),
                             Email = "admin@admin.com",
                             FirstName = "Admin",
                             ImageUrl = "/",

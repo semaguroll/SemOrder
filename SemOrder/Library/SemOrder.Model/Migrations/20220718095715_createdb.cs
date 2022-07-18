@@ -140,7 +140,7 @@ namespace SemOrder.Model.Migrations
             migrationBuilder.InsertData(
                 table: "User",
                 columns: new[] { "ID", "Email", "FirstName", "ImageUrl", "IsActive", "LastName", "Password" },
-                values: new object[] { new Guid("7b3c470a-b0c5-4814-9a82-d2c660afcdc3"), "admin@admin.com", "Admin", "/", true, "ADMIN", "123" });
+                values: new object[] { new Guid("48cdab79-b277-4dc0-a2d9-ea9ba322e731"), "admin@admin.com", "Admin", "/", true, "ADMIN", "123" });
 
             migrationBuilder.CreateIndex(
                 name: "IX_Booking_TableId",
