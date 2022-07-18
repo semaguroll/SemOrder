@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "4VJjZaGxQMFEoNWDdNoMUHU4cepMmim9tARSHzfUjdNHJzpUq4xITgMoYcFubAFAx6nqDpaafENt6/+WBkHraA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Sema Gurol\\Documents\\GitHub\\SemOrder\\SemOrder\\Presentation\\SemOrder.API\\SemOrder.API.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Sema Gurol\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.25\\microsoft.netcore.app.host.win-x64.3.1.25.nupkg.sha512"
+  ],
+  "logs": []
+}
