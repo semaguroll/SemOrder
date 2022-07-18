@@ -1,0 +1,16 @@
+C:\Users\Sema Gurol\Documents\GitHub\SemOrder\SemOrder\Library\SemOrder.Model\bin\Debug\netcoreapp3.1\SemOrder.Model.deps.json
+C:\Users\Sema Gurol\Documents\GitHub\SemOrder\SemOrder\Library\SemOrder.Model\bin\Debug\netcoreapp3.1\SemOrder.Model.runtimeconfig.json
+C:\Users\Sema Gurol\Documents\GitHub\SemOrder\SemOrder\Library\SemOrder.Model\bin\Debug\netcoreapp3.1\SemOrder.Model.runtimeconfig.dev.json
+C:\Users\Sema Gurol\Documents\GitHub\SemOrder\SemOrder\Library\SemOrder.Model\bin\Debug\netcoreapp3.1\SemOrder.Model.dll
+C:\Users\Sema Gurol\Documents\GitHub\SemOrder\SemOrder\Library\SemOrder.Model\bin\Debug\netcoreapp3.1\SemOrder.Model.pdb
+C:\Users\Sema Gurol\Documents\GitHub\SemOrder\SemOrder\Library\SemOrder.Model\bin\Debug\netcoreapp3.1\SemOrder.Core.dll
+C:\Users\Sema Gurol\Documents\GitHub\SemOrder\SemOrder\Library\SemOrder.Model\bin\Debug\netcoreapp3.1\SemOrder.Core.pdb
+C:\Users\Sema Gurol\Documents\GitHub\SemOrder\SemOrder\Library\SemOrder.Model\obj\Debug\netcoreapp3.1\SemOrder.Model.csproj.AssemblyReference.cache
+C:\Users\Sema Gurol\Documents\GitHub\SemOrder\SemOrder\Library\SemOrder.Model\obj\Debug\netcoreapp3.1\SemOrder.Model.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Sema Gurol\Documents\GitHub\SemOrder\SemOrder\Library\SemOrder.Model\obj\Debug\netcoreapp3.1\SemOrder.Model.AssemblyInfoInputs.cache
+C:\Users\Sema Gurol\Documents\GitHub\SemOrder\SemOrder\Library\SemOrder.Model\obj\Debug\netcoreapp3.1\SemOrder.Model.AssemblyInfo.cs
+C:\Users\Sema Gurol\Documents\GitHub\SemOrder\SemOrder\Library\SemOrder.Model\obj\Debug\netcoreapp3.1\SemOrder.Model.csproj.CoreCompileInputs.cache
+C:\Users\Sema Gurol\Documents\GitHub\SemOrder\SemOrder\Library\SemOrder.Model\obj\Debug\netcoreapp3.1\SemOrder.Model.csproj.CopyComplete
+C:\Users\Sema Gurol\Documents\GitHub\SemOrder\SemOrder\Library\SemOrder.Model\obj\Debug\netcoreapp3.1\SemOrder.Model.dll
+C:\Users\Sema Gurol\Documents\GitHub\SemOrder\SemOrder\Library\SemOrder.Model\obj\Debug\netcoreapp3.1\SemOrder.Model.pdb
+C:\Users\Sema Gurol\Documents\GitHub\SemOrder\SemOrder\Library\SemOrder.Model\obj\Debug\netcoreapp3.1\SemOrder.Model.genruntimeconfig.cache

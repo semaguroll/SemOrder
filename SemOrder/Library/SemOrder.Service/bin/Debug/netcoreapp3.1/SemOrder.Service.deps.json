@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "SemOrder.Service/1.0.0": {
+        "runtime": {
+          "SemOrder.Service.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SemOrder.Service/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

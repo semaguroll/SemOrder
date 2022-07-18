@@ -1,0 +1,10 @@
+C:\Users\Sema Gurol\Documents\GitHub\SemOrder\SemOrder\Library\SemOrder.Service\bin\Debug\netcoreapp3.1\SemOrder.Service.deps.json
+C:\Users\Sema Gurol\Documents\GitHub\SemOrder\SemOrder\Library\SemOrder.Service\bin\Debug\netcoreapp3.1\SemOrder.Service.dll
+C:\Users\Sema Gurol\Documents\GitHub\SemOrder\SemOrder\Library\SemOrder.Service\bin\Debug\netcoreapp3.1\SemOrder.Service.pdb
+C:\Users\Sema Gurol\Documents\GitHub\SemOrder\SemOrder\Library\SemOrder.Service\obj\Debug\netcoreapp3.1\SemOrder.Service.csproj.AssemblyReference.cache
+C:\Users\Sema Gurol\Documents\GitHub\SemOrder\SemOrder\Library\SemOrder.Service\obj\Debug\netcoreapp3.1\SemOrder.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Sema Gurol\Documents\GitHub\SemOrder\SemOrder\Library\SemOrder.Service\obj\Debug\netcoreapp3.1\SemOrder.Service.AssemblyInfoInputs.cache
+C:\Users\Sema Gurol\Documents\GitHub\SemOrder\SemOrder\Library\SemOrder.Service\obj\Debug\netcoreapp3.1\SemOrder.Service.AssemblyInfo.cs
+C:\Users\Sema Gurol\Documents\GitHub\SemOrder\SemOrder\Library\SemOrder.Service\obj\Debug\netcoreapp3.1\SemOrder.Service.csproj.CoreCompileInputs.cache
+C:\Users\Sema Gurol\Documents\GitHub\SemOrder\SemOrder\Library\SemOrder.Service\obj\Debug\netcoreapp3.1\SemOrder.Service.dll
+C:\Users\Sema Gurol\Documents\GitHub\SemOrder\SemOrder\Library\SemOrder.Service\obj\Debug\netcoreapp3.1\SemOrder.Service.pdb
