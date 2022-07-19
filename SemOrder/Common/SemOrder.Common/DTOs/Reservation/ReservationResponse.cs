@@ -5,13 +5,14 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace SemOrder.Common.DTOs.Booking
+namespace SemOrder.Common.DTOs.Reservation
 {
-    public class BookingResponse : BaseDto
+    public class ReservationResponse : BaseDto
     {
-        public string BookingDescription { get; set; }
-        public DateTime BookingDate { get; set; }
-        public string BookingTime { get; set; }
+        public string Message { get; set; }
+        public DateTime ReservationDate { get; set; }
+        public string ReservationTime { get; set; }
+        public int NumberOfPerson { get; set; }
 
         public UserRequest User { get; set; }
         public Guid UserId { get; set; }

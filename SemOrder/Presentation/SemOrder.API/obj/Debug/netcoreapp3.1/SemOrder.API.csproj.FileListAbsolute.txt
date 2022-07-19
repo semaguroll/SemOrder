@@ -72,3 +72,11 @@ C:\Users\Sema Gurol\Documents\GitHub\SemOrder\SemOrder\Presentation\SemOrder.API
 C:\Users\Sema Gurol\Documents\GitHub\SemOrder\SemOrder\Presentation\SemOrder.API\obj\Debug\netcoreapp3.1\SemOrder.API.genruntimeconfig.cache
 C:\Users\Sema Gurol\Documents\GitHub\SemOrder\SemOrder\Presentation\SemOrder.API\bin\Debug\netcoreapp3.1\SemOrder.Common.dll
 C:\Users\Sema Gurol\Documents\GitHub\SemOrder\SemOrder\Presentation\SemOrder.API\bin\Debug\netcoreapp3.1\SemOrder.Common.pdb
+C:\Users\Sema Gurol\Documents\GitHub\SemOrder\SemOrder\Presentation\SemOrder.API\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Sema Gurol\Documents\GitHub\SemOrder\SemOrder\Presentation\SemOrder.API\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+C:\Users\Sema Gurol\Documents\GitHub\SemOrder\SemOrder\Presentation\SemOrder.API\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Sema Gurol\Documents\GitHub\SemOrder\SemOrder\Presentation\SemOrder.API\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Sema Gurol\Documents\GitHub\SemOrder\SemOrder\Presentation\SemOrder.API\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Sema Gurol\Documents\GitHub\SemOrder\SemOrder\Presentation\SemOrder.API\bin\Debug\netcoreapp3.1\SemOrder.Service.dll
+C:\Users\Sema Gurol\Documents\GitHub\SemOrder\SemOrder\Presentation\SemOrder.API\bin\Debug\netcoreapp3.1\SemOrder.Service.pdb
+C:\Users\Sema Gurol\Documents\GitHub\SemOrder\SemOrder\Presentation\SemOrder.API\obj\Debug\netcoreapp3.1\SemOrder.API.MvcApplicationPartsAssemblyInfo.cs

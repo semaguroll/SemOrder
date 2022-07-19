@@ -19,42 +19,6 @@ namespace SemOrder.Model.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("SemOrder.Model.Entities.Booking", b =>
-                {
-                    b.Property<Guid>("ID")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<DateTime>("BookingDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("BookingDescription")
-                        .HasColumnType("nvarchar(50)")
-                        .HasMaxLength(50);
-
-                    b.Property<string>("BookingTime")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(10)")
-                        .HasMaxLength(10);
-
-                    b.Property<int>("Status")
-                        .HasColumnType("int");
-
-                    b.Property<Guid>("TableId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<Guid>("UserId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.HasKey("ID");
-
-                    b.HasIndex("TableId");
-
-                    b.HasIndex("UserId");
-
-                    b.ToTable("Booking");
-                });
-
             modelBuilder.Entity("SemOrder.Model.Entities.Category", b =>
                 {
                     b.Property<Guid>("ID")
@@ -155,6 +119,45 @@ namespace SemOrder.Model.Migrations
                     b.ToTable("Order");
                 });
 
+            modelBuilder.Entity("SemOrder.Model.Entities.Reservation", b =>
+                {
+                    b.Property<Guid>("ID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Message")
+                        .HasColumnType("nvarchar(50)")
+                        .HasMaxLength(50);
+
+                    b.Property<int>("NumberOfPerson")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("ReservationDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("ReservationTime")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(10)")
+                        .HasMaxLength(10);
+
+                    b.Property<int>("Status")
+                        .HasColumnType("int");
+
+                    b.Property<Guid>("TableId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("UserId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("ID");
+
+                    b.HasIndex("TableId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Reservation");
+                });
+
             modelBuilder.Entity("SemOrder.Model.Entities.Table", b =>
                 {
                     b.Property<Guid>("ID")
@@ -203,6 +206,9 @@ namespace SemOrder.Model.Migrations
                         .HasColumnType("nvarchar(20)")
                         .HasMaxLength(20);
 
+                    b.Property<string>("Phone")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<int>("Status")
                         .HasColumnType("int");
 
@@ -213,7 +219,7 @@ namespace SemOrder.Model.Migrations
                     b.HasData(
                         new
                         {
-                            ID = new Guid("eb94e5b4-ff2e-47f6-bf52-c2d821ceee9e"),
+                            ID = new Guid("5f79c7ad-0211-448a-8247-260da25745aa"),
                             Email = "admin@admin.com",
                             FirstName = "Admin",
                             ImageUrl = "/",
@@ -221,21 +227,6 @@ namespace SemOrder.Model.Migrations
                             Password = "123",
                             Status = 1
                         });
-                });
-
-            modelBuilder.Entity("SemOrder.Model.Entities.Booking", b =>
-                {
-                    b.HasOne("SemOrder.Model.Entities.Table", "Table")
-                        .WithMany("Bookings")
-                        .HasForeignKey("TableId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("SemOrder.Model.Entities.User", "User")
-                        .WithMany("Bookings")
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
                 });
 
             modelBuilder.Entity("SemOrder.Model.Entities.Food", b =>
@@ -263,6 +254,21 @@ namespace SemOrder.Model.Migrations
 
                     b.HasOne("SemOrder.Model.Entities.User", "User")
                         .WithMany("Orders")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("SemOrder.Model.Entities.Reservation", b =>
+                {
+                    b.HasOne("SemOrder.Model.Entities.Table", "Table")
+                        .WithMany("Reservations")
+                        .HasForeignKey("TableId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("SemOrder.Model.Entities.User", "User")
+                        .WithMany("Reservations")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();

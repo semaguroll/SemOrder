@@ -24,7 +24,7 @@ namespace SemOrder.Model.Context
             _httpContextAccessor = httpContextAccessor;
         }
 
-        public DbSet<Booking> Bookings { get; set; }
+        public DbSet<Reservation> Reservations { get; set; }
         public DbSet<Category> Categories { get; set; }
         public DbSet<User> Users { get; set; }
         public DbSet<Food> Foods { get; set; }

@@ -12,6 +12,7 @@ namespace SemOrder.Model.Migrations
                 columns: table => new
                 {
                     ID = table.Column<Guid>(nullable: false),
+                    Status = table.Column<int>(nullable: false),
                     Name = table.Column<string>(maxLength: 50, nullable: false),
                     Description = table.Column<string>(maxLength: 300, nullable: true),
                     ImageUrl = table.Column<string>(maxLength: 200, nullable: true)
@@ -26,6 +27,7 @@ namespace SemOrder.Model.Migrations
                 columns: table => new
                 {
                     ID = table.Column<Guid>(nullable: false),
+                    Status = table.Column<int>(nullable: false),
                     TableNum = table.Column<string>(maxLength: 10, nullable: true)
                 },
                 constraints: table =>
@@ -38,12 +40,13 @@ namespace SemOrder.Model.Migrations
                 columns: table => new
                 {
                     ID = table.Column<Guid>(nullable: false),
+                    Status = table.Column<int>(nullable: false),
                     FirstName = table.Column<string>(maxLength: 50, nullable: false),
                     LastName = table.Column<string>(maxLength: 50, nullable: false),
                     ImageUrl = table.Column<string>(maxLength: 200, nullable: true),
+                    Phone = table.Column<string>(nullable: true),
                     Email = table.Column<string>(maxLength: 150, nullable: false),
-                    Password = table.Column<string>(maxLength: 20, nullable: false),
-                    IsActive = table.Column<bool>(nullable: false)
+                    Password = table.Column<string>(maxLength: 20, nullable: false)
                 },
                 constraints: table =>
                 {
@@ -51,43 +54,14 @@ namespace SemOrder.Model.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Booking",
-                columns: table => new
-                {
-                    ID = table.Column<Guid>(nullable: false),
-                    BookingDescription = table.Column<string>(maxLength: 50, nullable: true),
-                    BookingDate = table.Column<DateTime>(nullable: false),
-                    BookingTime = table.Column<string>(maxLength: 10, nullable: false),
-                    IsActive = table.Column<bool>(nullable: false),
-                    UserId = table.Column<Guid>(nullable: false),
-                    TableId = table.Column<Guid>(nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Booking", x => x.ID);
-                    table.ForeignKey(
-                        name: "FK_Booking_Table_TableId",
-                        column: x => x.TableId,
-                        principalTable: "Table",
-                        principalColumn: "ID",
-                        onDelete: ReferentialAction.Cascade);
-                    table.ForeignKey(
-                        name: "FK_Booking_User_UserId",
-                        column: x => x.UserId,
-                        principalTable: "User",
-                        principalColumn: "ID",
-                        onDelete: ReferentialAction.Cascade);
-                });
-
-            migrationBuilder.CreateTable(
                 name: "Order",
                 columns: table => new
                 {
                     ID = table.Column<Guid>(nullable: false),
+                    Status = table.Column<int>(nullable: false),
                     Quantity = table.Column<int>(nullable: false),
                     TotalPrice = table.Column<int>(nullable: false),
                     OrderDate = table.Column<DateTime>(nullable: false),
-                    IsActive = table.Column<bool>(nullable: false),
                     UserId = table.Column<Guid>(nullable: false),
                     TableId = table.Column<Guid>(nullable: false)
                 },
@@ -109,10 +83,41 @@ namespace SemOrder.Model.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "Reservation",
+                columns: table => new
+                {
+                    ID = table.Column<Guid>(nullable: false),
+                    Status = table.Column<int>(nullable: false),
+                    Message = table.Column<string>(maxLength: 50, nullable: true),
+                    ReservationDate = table.Column<DateTime>(nullable: false),
+                    ReservationTime = table.Column<string>(maxLength: 10, nullable: false),
+                    NumberOfPerson = table.Column<int>(nullable: false),
+                    UserId = table.Column<Guid>(nullable: false),
+                    TableId = table.Column<Guid>(nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Reservation", x => x.ID);
+                    table.ForeignKey(
+                        name: "FK_Reservation_Table_TableId",
+                        column: x => x.TableId,
+                        principalTable: "Table",
+                        principalColumn: "ID",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_Reservation_User_UserId",
+                        column: x => x.UserId,
+                        principalTable: "User",
+                        principalColumn: "ID",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "Food",
                 columns: table => new
                 {
                     ID = table.Column<Guid>(nullable: false),
+                    Status = table.Column<int>(nullable: false),
                     Name = table.Column<string>(maxLength: 50, nullable: false),
                     Description = table.Column<string>(maxLength: 300, nullable: true),
                     ImageUrl = table.Column<string>(maxLength: 200, nullable: true),
@@ -139,18 +144,8 @@ namespace SemOrder.Model.Migrations
 
             migrationBuilder.InsertData(
                 table: "User",
-                columns: new[] { "ID", "Email", "FirstName", "ImageUrl", "IsActive", "LastName", "Password" },
-                values: new object[] { new Guid("48cdab79-b277-4dc0-a2d9-ea9ba322e731"), "admin@admin.com", "Admin", "/", true, "ADMIN", "123" });
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Booking_TableId",
-                table: "Booking",
-                column: "TableId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Booking_UserId",
-                table: "Booking",
-                column: "UserId");
+                columns: new[] { "ID", "Email", "FirstName", "ImageUrl", "LastName", "Password", "Phone", "Status" },
+                values: new object[] { new Guid("5f79c7ad-0211-448a-8247-260da25745aa"), "admin@admin.com", "Admin", "/", "ADMIN", "123", null, 1 });
 
             migrationBuilder.CreateIndex(
                 name: "IX_Food_CategoryId",
@@ -171,15 +166,25 @@ namespace SemOrder.Model.Migrations
                 name: "IX_Order_UserId",
                 table: "Order",
                 column: "UserId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Reservation_TableId",
+                table: "Reservation",
+                column: "TableId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Reservation_UserId",
+                table: "Reservation",
+                column: "UserId");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "Booking");
+                name: "Food");
 
             migrationBuilder.DropTable(
-                name: "Food");
+                name: "Reservation");
 
             migrationBuilder.DropTable(
                 name: "Category");

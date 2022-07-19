@@ -2,12 +2,12 @@
 using SemOrder.Service.Repository.Base;
 using EF = SemOrder.Model.Entities;
 
-namespace SemOrder.Service.Repository.Booking
+namespace SemOrder.Service.Repository.Reservation
 {
-    public class BookingRepository : Repository<EF.Booking>, IBookingRepository
+    public class ReservationRepository : Repository<EF.Reservation>, IReservationRepository
     {
         private readonly DataContext _dataContext;
-        public BookingRepository(DataContext dataContext)
+        public ReservationRepository(DataContext dataContext)
             :base(dataContext)
         {
                 _dataContext = dataContext;

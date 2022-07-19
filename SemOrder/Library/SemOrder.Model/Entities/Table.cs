@@ -9,12 +9,12 @@ namespace SemOrder.Model.Entities
     {
         public Table()
         {
-            Bookings = new HashSet<Booking>();
+            Reservations = new HashSet<Reservation>();
             Orders = new HashSet<Order>();
         }
         public string TableNum { get; set; }
 
-        public ICollection<Booking> Bookings { get; set; }
+        public ICollection<Reservation> Reservations { get; set; }
         public ICollection<Order> Orders { get; set; }
 
     }

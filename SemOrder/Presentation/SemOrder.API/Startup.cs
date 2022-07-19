@@ -11,7 +11,7 @@ using Microsoft.IdentityModel.Tokens;
 using SemOrder.API.Infrastructor.Model;
 using SemOrder.Common.WorkContext;
 using SemOrder.Model.Context;
-using SemOrder.Service.Repository.Booking;
+using SemOrder.Service.Repository.Reservation;
 using SemOrder.Service.Repository.Category;
 using SemOrder.Service.Repository.Food;
 using SemOrder.Service.Repository.Order;
@@ -53,7 +53,7 @@ namespace SemOrder.API
 
             services.AddHttpContextAccessor();
             services.AddTransient<IWorkContext, ApiWorkContext>();
-            services.AddTransient<IBookingRepository, BookingRepository>();
+            services.AddTransient<IReservationRepository, ReservationRepository>();
             services.AddTransient<ICategoryRepository, CategoryRepository>();
             services.AddTransient<IFoodRepository, FoodRepository>();
             services.AddTransient<IOrderRepository, OrderRepository>();
