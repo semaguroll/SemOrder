@@ -18,7 +18,6 @@ namespace SemOrder.Model.Map
                 entity.Property(x => x.Quantity).HasConversion(typeof(int)).IsRequired(true);
                 entity.Property(x => x.TotalPrice).HasConversion(typeof(int)).IsRequired(true);
                 entity.Property(x => x.OrderDate).HasConversion(typeof(DateTime)).IsRequired(true);
-                entity.Property(x => x.IsActive).IsRequired(true);
 
                 entity
                 .HasOne(o => o.User)

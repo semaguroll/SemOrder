@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "41Y499jUrKCDk3epp18rh+/FC+aZgTkNOmVikC3ywyUSA0bni+AIJ5xc5TDfCiH4U8OmBK+FzpmAMjs655l6Ew==",
+  "dgSpecHash": "l0KU/uO/9DHI7PVEC9LYGqbm3wwWow7bMRMx2jx+D4435RVCu41GINtIi1sn5pmuM4wEq99Uxszxaak+ipQf7Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\Sema Gurol\\Documents\\GitHub\\SemOrder\\SemOrder\\Library\\SemOrder.Core\\SemOrder.Core.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Sema Gurol\\.nuget\\packages\\automapper\\9.0.0\\automapper.9.0.0.nupkg.sha512",
+    "C:\\Users\\Sema Gurol\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\7.0.0\\automapper.extensions.microsoft.dependencyinjection.7.0.0.nupkg.sha512",
     "C:\\Users\\Sema Gurol\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions\\2.2.0\\microsoft.aspnetcore.http.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\Sema Gurol\\.nuget\\packages\\microsoft.aspnetcore.http.features\\2.2.0\\microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512",
     "C:\\Users\\Sema Gurol\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",

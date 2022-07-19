@@ -10,7 +10,6 @@ namespace SemOrder.Model.Entities
         public string BookingDescription { get; set; }
         public DateTime BookingDate { get; set; }
         public string BookingTime { get; set; }
-        public bool IsActive { get; set; }
 
         public Guid UserId { get; set; }
         public User User { get; set; }

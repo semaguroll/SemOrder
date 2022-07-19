@@ -19,7 +19,6 @@ namespace SemOrder.Model.Map
                 entity.Property(x => x.BookingDescription).HasMaxLength(50).IsRequired(false);
                 entity.Property(x => x.BookingDate).HasConversion(typeof(DateTime)).IsRequired(true);
                 entity.Property(x => x.BookingTime).HasMaxLength(10).IsRequired(true);
-                entity.Property(x => x.IsActive).IsRequired(true);
 
                 entity
                 .HasOne(b => b.User)

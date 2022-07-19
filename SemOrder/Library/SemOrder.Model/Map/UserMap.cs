@@ -20,7 +20,6 @@ namespace SemOrder.Model.Map
                 entity.Property(x => x.ImageUrl).HasMaxLength(200).IsRequired(false);
                 entity.Property(x => x.Email).HasMaxLength(150).IsRequired(true);
                 entity.Property(x => x.Password).HasMaxLength(20).IsRequired(true);
-                entity.Property(x => x.IsActive).IsRequired(true);
             });
         }
     }

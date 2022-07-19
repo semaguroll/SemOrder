@@ -16,13 +16,13 @@ namespace SemOrder.Core.Repository
         Task<bool> UpdateRange(List<T> items);
         Task<bool> Remove(T item);
         Task<bool> RemoveAll(Expression<Func<T, bool>> exp);
-        Task<T[]> GetAll();
         Task<T> GetById(Guid id, params Expression<Func<T, object>>[] includeParameters);
         Task<T> GetByDefault(Expression<Func<T, bool>> exp, params Expression<Func<T, object>>[] includeParameters);
-
+        IQueryable<T> GetActive();
         IQueryable<T> GetDefault(Expression<Func<T, bool>> exp, params Expression<Func<T, object>>[] includeParameters);
         IQueryable<T> Table { get; }
         IQueryable<T> TableNoTracking { get; }
+        Task<bool> Activate(Guid id);
         Task<bool> Any(Expression<Func<T, bool>> exp);
         Task<int> Save();
     }

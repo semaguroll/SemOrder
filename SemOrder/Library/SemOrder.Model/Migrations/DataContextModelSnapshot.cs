@@ -37,8 +37,8 @@ namespace SemOrder.Model.Migrations
                         .HasColumnType("nvarchar(10)")
                         .HasMaxLength(10);
 
-                    b.Property<bool>("IsActive")
-                        .HasColumnType("bit");
+                    b.Property<int>("Status")
+                        .HasColumnType("int");
 
                     b.Property<Guid>("TableId")
                         .HasColumnType("uniqueidentifier");
@@ -74,6 +74,9 @@ namespace SemOrder.Model.Migrations
                         .HasColumnType("nvarchar(50)")
                         .HasMaxLength(50);
 
+                    b.Property<int>("Status")
+                        .HasColumnType("int");
+
                     b.HasKey("ID");
 
                     b.ToTable("Category");
@@ -107,6 +110,9 @@ namespace SemOrder.Model.Migrations
                     b.Property<float>("Price")
                         .HasColumnType("real");
 
+                    b.Property<int>("Status")
+                        .HasColumnType("int");
+
                     b.HasKey("ID");
 
                     b.HasIndex("CategoryId");
@@ -122,13 +128,13 @@ namespace SemOrder.Model.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<bool>("IsActive")
-                        .HasColumnType("bit");
-
                     b.Property<DateTime>("OrderDate")
                         .HasColumnType("datetime2");
 
                     b.Property<int>("Quantity")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Status")
                         .HasColumnType("int");
 
                     b.Property<Guid>("TableId")
@@ -154,6 +160,9 @@ namespace SemOrder.Model.Migrations
                     b.Property<Guid>("ID")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
+
+                    b.Property<int>("Status")
+                        .HasColumnType("int");
 
                     b.Property<string>("TableNum")
                         .HasColumnType("nvarchar(10)")
@@ -184,9 +193,6 @@ namespace SemOrder.Model.Migrations
                         .HasColumnType("nvarchar(200)")
                         .HasMaxLength(200);
 
-                    b.Property<bool>("IsActive")
-                        .HasColumnType("bit");
-
                     b.Property<string>("LastName")
                         .IsRequired()
                         .HasColumnType("nvarchar(50)")
@@ -197,6 +203,9 @@ namespace SemOrder.Model.Migrations
                         .HasColumnType("nvarchar(20)")
                         .HasMaxLength(20);
 
+                    b.Property<int>("Status")
+                        .HasColumnType("int");
+
                     b.HasKey("ID");
 
                     b.ToTable("User");
@@ -204,13 +213,13 @@ namespace SemOrder.Model.Migrations
                     b.HasData(
                         new
                         {
-                            ID = new Guid("48cdab79-b277-4dc0-a2d9-ea9ba322e731"),
+                            ID = new Guid("eb94e5b4-ff2e-47f6-bf52-c2d821ceee9e"),
                             Email = "admin@admin.com",
                             FirstName = "Admin",
                             ImageUrl = "/",
-                            IsActive = true,
                             LastName = "ADMIN",
-                            Password = "123"
+                            Password = "123",
+                            Status = 1
                         });
                 });
 

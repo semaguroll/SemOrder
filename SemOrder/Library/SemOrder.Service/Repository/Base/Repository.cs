@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using SemOrder.Common.Enums;
 using SemOrder.Core.Entity;
 using SemOrder.Core.Repository;
 using SemOrder.Model.Context;
@@ -116,40 +117,90 @@ namespace SemOrder.Service.Repository.Base
             }
         }
         public async Task<bool> Any(Expression<Func<T, bool>> exp) => await Entities.AnyAsync(exp);
-        public Task<T[]> GetAll()
+
+
+        public async Task<T> GetByDefault(Expression<Func<T, bool>> exp, params Expression<Func<T, object>>[] includeParameters)
         {
-            throw new NotImplementedException();
+            IQueryable<T> queryable = TableNoTracking;
+            foreach (Expression<Func<T, object>> includeParameter in includeParameters)
+            {
+                queryable = queryable.Include(includeParameter);
+            }
+            return await queryable.FirstOrDefaultAsync();
         }
 
-        public Task<T> GetByDefault(Expression<Func<T, bool>> exp, params Expression<Func<T, object>>[] includeParameters)
+        public async Task<T> GetById(Guid id, params Expression<Func<T, object>>[] includeParameters)
         {
-            throw new NotImplementedException();
+            IQueryable<T> queryable = TableNoTracking;
+            foreach (Expression<Func<T, object>> includeParameter in includeParameters)
+            {
+                queryable = queryable.Include(includeParameter);
+            }
+            return await queryable.FirstOrDefaultAsync(x => x.ID == id);
         }
-
-        public Task<T> GetById(Guid id, params Expression<Func<T, object>>[] includeParameters)
-        {
-            throw new NotImplementedException();
-        }
-
+        public IQueryable<T> GetActive() => Entities.Where(x => x.Status != Status.Deleted).AsQueryable();
         public IQueryable<T> GetDefault(Expression<Func<T, bool>> exp, params Expression<Func<T, object>>[] includeParameters)
         {
-            throw new NotImplementedException();
+            IQueryable<T> queryable = TableNoTracking;
+            foreach (Expression<Func<T, object>> includeParameter in includeParameters)
+            {
+                queryable = queryable.Include(includeParameter);
+            }
+            return queryable.Where(exp).AsQueryable();
         }
 
-        public Task<bool> Remove(T item)
+        public async Task<bool> Remove(T item)
         {
-            throw new NotImplementedException();
+            item.Status = Status.Deleted;
+            if (await Update(item) != null)
+                return true;
+            else
+                return false;
         }
 
-        public Task<bool> RemoveAll(Expression<Func<T, bool>> exp)
+        public async Task<bool> RemoveAll(Expression<Func<T, bool>> exp)
         {
-            throw new NotImplementedException();
-        }
+            try
+            {
+                using (TransactionScope scope = new TransactionScope())
+                {
+                    var collection = GetDefault(exp);
+                    int count = 0;
+                    foreach (var item in collection)
+                    {
+                        item.Status = Status.Deleted;
+                        if (await Update(item) != null)
+                            count++;
+                    }
+                    if (collection.Count() == count)
+                    {
+                        scope.Complete();
+                        return true;
+                    }
 
-        public Task<int> Save()
-        {
-            throw new NotImplementedException();
+                    else
+                        return false;
+
+                }
+
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
+        public async Task<bool> Activate(Guid id)
+        {
+            T activated = await GetById(id);
+            activated.Status = Status.Active;
+            if (await Update(activated) != null)
+                return true;
+            else
+                return false;
+
+        }
+        public async Task<int> Save() => await _context.SaveChangesAsync();
 
 
     }

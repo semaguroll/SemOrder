@@ -8,3 +8,6 @@ C:\Users\Sema Gurol\Documents\GitHub\SemOrder\SemOrder\Library\SemOrder.Core\obj
 C:\Users\Sema Gurol\Documents\GitHub\SemOrder\SemOrder\Library\SemOrder.Core\obj\Debug\netcoreapp3.1\SemOrder.Core.csproj.CoreCompileInputs.cache
 C:\Users\Sema Gurol\Documents\GitHub\SemOrder\SemOrder\Library\SemOrder.Core\obj\Debug\netcoreapp3.1\SemOrder.Core.dll
 C:\Users\Sema Gurol\Documents\GitHub\SemOrder\SemOrder\Library\SemOrder.Core\obj\Debug\netcoreapp3.1\SemOrder.Core.pdb
+C:\Users\Sema Gurol\Documents\GitHub\SemOrder\SemOrder\Library\SemOrder.Core\bin\Debug\netcoreapp3.1\SemOrder.Common.dll
+C:\Users\Sema Gurol\Documents\GitHub\SemOrder\SemOrder\Library\SemOrder.Core\bin\Debug\netcoreapp3.1\SemOrder.Common.pdb
+C:\Users\Sema Gurol\Documents\GitHub\SemOrder\SemOrder\Library\SemOrder.Core\obj\Debug\netcoreapp3.1\SemOrder.Core.csproj.CopyComplete

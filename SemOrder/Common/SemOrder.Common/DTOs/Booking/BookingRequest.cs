@@ -10,7 +10,6 @@ namespace SemOrder.Common.DTOs.Booking
         public string BookingDescription { get; set; }
         public DateTime BookingDate { get; set; }
         public string BookingTime { get; set; }
-        public bool IsActive { get; set; }
 
         public Guid CustomerId { get; set; }
         public Guid TableId { get; set; }

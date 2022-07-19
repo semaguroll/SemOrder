@@ -12,6 +12,8 @@ namespace SemOrder.Model.Map.Base
         {
             entity.HasKey(x => x.ID);
             entity.Property(x => x.ID).ValueGeneratedOnAdd();
+
+            entity.Property(x => x.Status).IsRequired(true);
         }
     }
 }
