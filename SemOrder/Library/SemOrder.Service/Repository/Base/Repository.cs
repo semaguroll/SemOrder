@@ -140,7 +140,7 @@ namespace SemOrder.Service.Repository.Base
             }
             return await queryable.FirstOrDefaultAsync(x => x.ID == id);
         }
-        public IQueryable<T> GetActive() => Entities.Where(x => x.Status != Status.Deleted).AsQueryable();
+        public IQueryable<T> GetActive() => Entities.Where(x => x.Status == Status.Active || x.Status == Status.Updated ).AsQueryable();
         public IQueryable<T> GetDefault(Expression<Func<T, bool>> exp, params Expression<Func<T, object>>[] includeParameters)
         {
             IQueryable<T> queryable = TableNoTracking;
