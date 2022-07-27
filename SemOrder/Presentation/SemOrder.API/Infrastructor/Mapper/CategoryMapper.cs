@@ -13,7 +13,12 @@ namespace SemOrder.API.Infrastructor.Mapper
                 .ReverseMap()
                 .IgnoreAllNonExisting()
                 .ForAllMembers(option => option.Condition((src, dest, srcMember) => srcMember != null));
-                
+
+            CreateMap<Category, CategoryResponse>()
+                .ReverseMap()
+                .IgnoreAllNonExisting()
+                .ForAllMembers(option => option.Condition((src, dest, srcMember) => srcMember != null));
+
         }
     }
 }

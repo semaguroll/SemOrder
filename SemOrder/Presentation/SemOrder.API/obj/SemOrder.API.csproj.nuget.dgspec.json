@@ -335,6 +335,9 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
+              "C:\\Users\\Sema Gurol\\Documents\\GitHub\\SemOrder\\SemOrder\\Library\\SemOrder.Core\\SemOrder.Core.csproj": {
+                "projectPath": "C:\\Users\\Sema Gurol\\Documents\\GitHub\\SemOrder\\SemOrder\\Library\\SemOrder.Core\\SemOrder.Core.csproj"
+              },
               "C:\\Users\\Sema Gurol\\Documents\\GitHub\\SemOrder\\SemOrder\\Library\\SemOrder.Model\\SemOrder.Model.csproj": {
                 "projectPath": "C:\\Users\\Sema Gurol\\Documents\\GitHub\\SemOrder\\SemOrder\\Library\\SemOrder.Model\\SemOrder.Model.csproj"
               },
@@ -359,6 +362,10 @@
               "version": "[7.0.0, )"
             },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[3.1.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[3.1.11, )"
             },

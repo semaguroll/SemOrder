@@ -33,8 +33,10 @@
         "dependencies": {
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "7.0.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "3.1.11",
+          "Microsoft.EntityFrameworkCore.SqlServer": "3.1.11",
           "Microsoft.EntityFrameworkCore.Tools": "3.1.11",
           "Microsoft.Extensions.DependencyInjection": "3.1.11",
+          "SemOrder.Core": "1.0.0",
           "SemOrder.Model": "1.0.0",
           "SemOrder.Service": "1.0.0",
           "Swashbuckle.AspNetCore.Swagger": "6.2.3",

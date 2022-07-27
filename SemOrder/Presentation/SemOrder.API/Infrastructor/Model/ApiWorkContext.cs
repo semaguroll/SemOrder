@@ -16,14 +16,12 @@ namespace SemOrder.API.Infrastructor.Model
     {
         private readonly IHttpContextAccessor _contextAccessor;
         private readonly IUserRepository _userRepository;
-        private readonly IWorkContext _workContext;
         private readonly IMapper _mapper;
 
-        public ApiWorkContext(IHttpContextAccessor contextAccessor, IUserRepository userRepository, IWorkContext workContext, IMapper mapper)
+        public ApiWorkContext(IHttpContextAccessor contextAccessor, IUserRepository userRepository, IMapper mapper)
         {
             _contextAccessor = contextAccessor;
             _userRepository = userRepository;
-            _workContext = workContext;
             _mapper = mapper;
         }
         public UserResponse CurrentUser

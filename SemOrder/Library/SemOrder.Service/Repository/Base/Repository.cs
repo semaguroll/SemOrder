@@ -34,7 +34,9 @@ namespace SemOrder.Service.Repository.Base
         }
         public IQueryable<T> Table => Entities;
 
+        //veri sadece okunur.
         public IQueryable<T> TableNoTracking => Entities.AsNoTracking();
+      
 
         public async Task<T> Add(T item)
         {

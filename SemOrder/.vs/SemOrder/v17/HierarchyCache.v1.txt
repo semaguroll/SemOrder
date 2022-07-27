@@ -1,0 +1,336 @@
+﻿++Solution 'SemOrder' ‎(6 of 6 projects)
+i:{00000000-0000-0000-0000-000000000000}:SemOrder.sln
+++Common
+i:{00000000-0000-0000-0000-000000000000}:Common
+++SemOrder.Common
+i:{548cc66b-68b3-4438-a139-29bb71b2f183}:SemOrder.Common
+i:{de1d2c8e-678e-4b52-8d78-319ebae73f97}:c:\users\sema gurol\documents\github\semorder\semorder\common\semorder.common\semorder.common.csproj
+++Dependencies
+i:{2c2c3737-7b3f-42de-9064-84086fa6ae82}:>494
+i:{de1d2c8e-678e-4b52-8d78-319ebae73f97}:>493
+i:{0ab1045d-2a3e-455c-8ebc-82d342c8bc28}:>488
+i:{8ee4d258-0793-4b06-a80d-64f7cf4330d9}:>530
+i:{fc232d60-5cf9-4c2d-832c-4b046e31c941}:>691
+i:{4b660c31-0014-48d7-ace3-6463e33b5c2d}:>690
+++DTOs
+i:{2c2c3737-7b3f-42de-9064-84086fa6ae82}:c:\users\sema gurol\documents\github\semorder\semorder\common\semorder.common\dtos\
+++Base
+i:{2c2c3737-7b3f-42de-9064-84086fa6ae82}:c:\users\sema gurol\documents\github\semorder\semorder\common\semorder.common\dtos\base\
+i:{0ab1045d-2a3e-455c-8ebc-82d342c8bc28}:c:\users\sema gurol\documents\github\semorder\semorder\library\semorder.model\map\base\
+i:{8ee4d258-0793-4b06-a80d-64f7cf4330d9}:c:\users\sema gurol\documents\github\semorder\semorder\library\semorder.service\repository\base\
+i:{fc232d60-5cf9-4c2d-832c-4b046e31c941}:c:\users\sema gurol\documents\github\semorder\semorder\presentation\semorder.api\controllers\base\
+++BaseDto.cs
+i:{2c2c3737-7b3f-42de-9064-84086fa6ae82}:c:\users\sema gurol\documents\github\semorder\semorder\common\semorder.common\dtos\base\basedto.cs
+++Category
+i:{2c2c3737-7b3f-42de-9064-84086fa6ae82}:c:\users\sema gurol\documents\github\semorder\semorder\common\semorder.common\dtos\category\
+i:{8ee4d258-0793-4b06-a80d-64f7cf4330d9}:c:\users\sema gurol\documents\github\semorder\semorder\library\semorder.service\repository\category\
+++CategoryRequest.cs
+i:{2c2c3737-7b3f-42de-9064-84086fa6ae82}:c:\users\sema gurol\documents\github\semorder\semorder\common\semorder.common\dtos\category\categoryrequest.cs
+++Food
+i:{2c2c3737-7b3f-42de-9064-84086fa6ae82}:c:\users\sema gurol\documents\github\semorder\semorder\common\semorder.common\dtos\food\
+i:{8ee4d258-0793-4b06-a80d-64f7cf4330d9}:c:\users\sema gurol\documents\github\semorder\semorder\library\semorder.service\repository\food\
+++FoodRequest.cs
+i:{2c2c3737-7b3f-42de-9064-84086fa6ae82}:c:\users\sema gurol\documents\github\semorder\semorder\common\semorder.common\dtos\food\foodrequest.cs
+++FoodResponse.cs
+i:{2c2c3737-7b3f-42de-9064-84086fa6ae82}:c:\users\sema gurol\documents\github\semorder\semorder\common\semorder.common\dtos\food\foodresponse.cs
+++Login
+i:{2c2c3737-7b3f-42de-9064-84086fa6ae82}:c:\users\sema gurol\documents\github\semorder\semorder\common\semorder.common\dtos\login\
+++LoginRequest.cs
+i:{2c2c3737-7b3f-42de-9064-84086fa6ae82}:c:\users\sema gurol\documents\github\semorder\semorder\common\semorder.common\dtos\login\loginrequest.cs
+++Order
+i:{2c2c3737-7b3f-42de-9064-84086fa6ae82}:c:\users\sema gurol\documents\github\semorder\semorder\common\semorder.common\dtos\order\
+i:{8ee4d258-0793-4b06-a80d-64f7cf4330d9}:c:\users\sema gurol\documents\github\semorder\semorder\library\semorder.service\repository\order\
+++OrderRequest.cs
+i:{2c2c3737-7b3f-42de-9064-84086fa6ae82}:c:\users\sema gurol\documents\github\semorder\semorder\common\semorder.common\dtos\order\orderrequest.cs
+++OrderResponse.cs
+i:{2c2c3737-7b3f-42de-9064-84086fa6ae82}:c:\users\sema gurol\documents\github\semorder\semorder\common\semorder.common\dtos\order\orderresponse.cs
+++Reservation
+i:{2c2c3737-7b3f-42de-9064-84086fa6ae82}:c:\users\sema gurol\documents\github\semorder\semorder\common\semorder.common\dtos\reservation\
+i:{8ee4d258-0793-4b06-a80d-64f7cf4330d9}:c:\users\sema gurol\documents\github\semorder\semorder\library\semorder.service\repository\reservation\
+++ReservationRequest.cs
+i:{2c2c3737-7b3f-42de-9064-84086fa6ae82}:c:\users\sema gurol\documents\github\semorder\semorder\common\semorder.common\dtos\reservation\reservationrequest.cs
+++ReservationResponse.cs
+i:{2c2c3737-7b3f-42de-9064-84086fa6ae82}:c:\users\sema gurol\documents\github\semorder\semorder\common\semorder.common\dtos\reservation\reservationresponse.cs
+++Table
+i:{2c2c3737-7b3f-42de-9064-84086fa6ae82}:c:\users\sema gurol\documents\github\semorder\semorder\common\semorder.common\dtos\table\
+i:{8ee4d258-0793-4b06-a80d-64f7cf4330d9}:c:\users\sema gurol\documents\github\semorder\semorder\library\semorder.service\repository\table\
+++TableRequest.cs
+i:{2c2c3737-7b3f-42de-9064-84086fa6ae82}:c:\users\sema gurol\documents\github\semorder\semorder\common\semorder.common\dtos\table\tablerequest.cs
+++User
+i:{2c2c3737-7b3f-42de-9064-84086fa6ae82}:c:\users\sema gurol\documents\github\semorder\semorder\common\semorder.common\dtos\user\
+i:{8ee4d258-0793-4b06-a80d-64f7cf4330d9}:c:\users\sema gurol\documents\github\semorder\semorder\library\semorder.service\repository\user\
+++UserRequest.cs
+i:{2c2c3737-7b3f-42de-9064-84086fa6ae82}:c:\users\sema gurol\documents\github\semorder\semorder\common\semorder.common\dtos\user\userrequest.cs
+++UserResponse.cs
+i:{2c2c3737-7b3f-42de-9064-84086fa6ae82}:c:\users\sema gurol\documents\github\semorder\semorder\common\semorder.common\dtos\user\userresponse.cs
+++Enums
+i:{2c2c3737-7b3f-42de-9064-84086fa6ae82}:c:\users\sema gurol\documents\github\semorder\semorder\common\semorder.common\enums\
+++Status.cs
+i:{2c2c3737-7b3f-42de-9064-84086fa6ae82}:c:\users\sema gurol\documents\github\semorder\semorder\common\semorder.common\enums\status.cs
+++Extensions
+i:{2c2c3737-7b3f-42de-9064-84086fa6ae82}:c:\users\sema gurol\documents\github\semorder\semorder\common\semorder.common\extensions\
+++GeneralExtensions.cs
+i:{2c2c3737-7b3f-42de-9064-84086fa6ae82}:c:\users\sema gurol\documents\github\semorder\semorder\common\semorder.common\extensions\generalextensions.cs
+++MappingExpressionExtensions.cs
+i:{2c2c3737-7b3f-42de-9064-84086fa6ae82}:c:\users\sema gurol\documents\github\semorder\semorder\common\semorder.common\extensions\mappingexpressionextensions.cs
+++WorkContext
+i:{2c2c3737-7b3f-42de-9064-84086fa6ae82}:c:\users\sema gurol\documents\github\semorder\semorder\common\semorder.common\workcontext\
+++IWorkContext.cs
+i:{2c2c3737-7b3f-42de-9064-84086fa6ae82}:c:\users\sema gurol\documents\github\semorder\semorder\common\semorder.common\workcontext\iworkcontext.cs
+++Frameworks
+i:{2c2c3737-7b3f-42de-9064-84086fa6ae82}:frameworks
+i:{de1d2c8e-678e-4b52-8d78-319ebae73f97}:frameworks
+i:{0ab1045d-2a3e-455c-8ebc-82d342c8bc28}:frameworks
+i:{8ee4d258-0793-4b06-a80d-64f7cf4330d9}:frameworks
+i:{fc232d60-5cf9-4c2d-832c-4b046e31c941}:frameworks
+i:{4b660c31-0014-48d7-ace3-6463e33b5c2d}:frameworks
+++Packages
+i:{2c2c3737-7b3f-42de-9064-84086fa6ae82}:packages
+i:{de1d2c8e-678e-4b52-8d78-319ebae73f97}:packages
+i:{0ab1045d-2a3e-455c-8ebc-82d342c8bc28}:packages
+i:{fc232d60-5cf9-4c2d-832c-4b046e31c941}:packages
+++Microsoft.NETCore.App
+i:{2c2c3737-7b3f-42de-9064-84086fa6ae82}:c:\users\sema gurol\documents\github\semorder\semorder\common\semorder.common\microsoft.netcore.app
+i:{de1d2c8e-678e-4b52-8d78-319ebae73f97}:c:\users\sema gurol\documents\github\semorder\semorder\library\semorder.core\microsoft.netcore.app
+i:{0ab1045d-2a3e-455c-8ebc-82d342c8bc28}:c:\users\sema gurol\documents\github\semorder\semorder\library\semorder.model\microsoft.netcore.app
+i:{8ee4d258-0793-4b06-a80d-64f7cf4330d9}:c:\users\sema gurol\documents\github\semorder\semorder\library\semorder.service\microsoft.netcore.app
+i:{fc232d60-5cf9-4c2d-832c-4b046e31c941}:c:\users\sema gurol\documents\github\semorder\semorder\presentation\semorder.api\microsoft.netcore.app
+i:{4b660c31-0014-48d7-ace3-6463e33b5c2d}:c:\users\sema gurol\documents\github\semorder\semorder\presentation\semorder.web.ui\microsoft.netcore.app
+++AutoMapper.Extensions.Microsoft.DependencyInjection (7.0.0)
+i:{2c2c3737-7b3f-42de-9064-84086fa6ae82}:>714
+i:{fc232d60-5cf9-4c2d-832c-4b046e31c941}:>729
+++Library
+i:{00000000-0000-0000-0000-000000000000}:Library
+++SemOrder.Core
+i:{2a391455-1c7f-472c-94e5-504f043d9207}:SemOrder.Core
+i:{0ab1045d-2a3e-455c-8ebc-82d342c8bc28}:c:\users\sema gurol\documents\github\semorder\semorder\library\semorder.core\bin\debug\netcoreapp3.1\semorder.core.dll
+i:{8ee4d258-0793-4b06-a80d-64f7cf4330d9}:c:\users\sema gurol\documents\github\semorder\semorder\library\semorder.core\bin\debug\netcoreapp3.1\semorder.core.dll
+++Entity
+i:{de1d2c8e-678e-4b52-8d78-319ebae73f97}:c:\users\sema gurol\documents\github\semorder\semorder\library\semorder.core\entity\
+++CoreEntity.cs
+i:{de1d2c8e-678e-4b52-8d78-319ebae73f97}:c:\users\sema gurol\documents\github\semorder\semorder\library\semorder.core\entity\coreentity.cs
+++Map
+i:{de1d2c8e-678e-4b52-8d78-319ebae73f97}:c:\users\sema gurol\documents\github\semorder\semorder\library\semorder.core\map\
+i:{0ab1045d-2a3e-455c-8ebc-82d342c8bc28}:c:\users\sema gurol\documents\github\semorder\semorder\library\semorder.model\map\
+++IEntityBuilder.cs
+i:{de1d2c8e-678e-4b52-8d78-319ebae73f97}:c:\users\sema gurol\documents\github\semorder\semorder\library\semorder.core\map\ientitybuilder.cs
+++Repository
+i:{de1d2c8e-678e-4b52-8d78-319ebae73f97}:c:\users\sema gurol\documents\github\semorder\semorder\library\semorder.core\repository\
+i:{8ee4d258-0793-4b06-a80d-64f7cf4330d9}:c:\users\sema gurol\documents\github\semorder\semorder\library\semorder.service\repository\
+++IRepository.cs
+i:{de1d2c8e-678e-4b52-8d78-319ebae73f97}:c:\users\sema gurol\documents\github\semorder\semorder\library\semorder.core\repository\irepository.cs
+++Analyzers
+i:{de1d2c8e-678e-4b52-8d78-319ebae73f97}:analyzers
+i:{0ab1045d-2a3e-455c-8ebc-82d342c8bc28}:analyzers
+i:{8ee4d258-0793-4b06-a80d-64f7cf4330d9}:analyzers
+i:{fc232d60-5cf9-4c2d-832c-4b046e31c941}:analyzers
+i:{4b660c31-0014-48d7-ace3-6463e33b5c2d}:analyzers
+++Projects
+i:{de1d2c8e-678e-4b52-8d78-319ebae73f97}:projects
+i:{0ab1045d-2a3e-455c-8ebc-82d342c8bc28}:projects
+i:{8ee4d258-0793-4b06-a80d-64f7cf4330d9}:projects
+i:{fc232d60-5cf9-4c2d-832c-4b046e31c941}:projects
+++Microsoft.EntityFrameworkCore.Analyzers
+i:{de1d2c8e-678e-4b52-8d78-319ebae73f97}:c:\users\sema gurol\.nuget\packages\microsoft.entityframeworkcore.analyzers\3.1.11\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
+i:{0ab1045d-2a3e-455c-8ebc-82d342c8bc28}:c:\users\sema gurol\.nuget\packages\microsoft.entityframeworkcore.analyzers\3.1.11\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
+i:{8ee4d258-0793-4b06-a80d-64f7cf4330d9}:c:\users\sema gurol\.nuget\packages\microsoft.entityframeworkcore.analyzers\3.1.11\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
+i:{fc232d60-5cf9-4c2d-832c-4b046e31c941}:c:\users\sema gurol\.nuget\packages\microsoft.entityframeworkcore.analyzers\3.1.11\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
+++Microsoft.AspNetCore.Http.Abstractions (2.2.0)
+i:{de1d2c8e-678e-4b52-8d78-319ebae73f97}:>722
+i:{0ab1045d-2a3e-455c-8ebc-82d342c8bc28}:>736
+++Microsoft.EntityFrameworkCore.Relational (3.1.11)
+i:{de1d2c8e-678e-4b52-8d78-319ebae73f97}:>718
+i:{0ab1045d-2a3e-455c-8ebc-82d342c8bc28}:>732
+++Microsoft.EntityFrameworkCore.SqlServer (3.1.11)
+i:{de1d2c8e-678e-4b52-8d78-319ebae73f97}:>715
+++SemOrder.Model
+i:{2a391455-1c7f-472c-94e5-504f043d9207}:SemOrder.Model
+i:{8ee4d258-0793-4b06-a80d-64f7cf4330d9}:c:\users\sema gurol\documents\github\semorder\semorder\library\semorder.model\bin\debug\netcoreapp3.1\semorder.model.dll
+i:{fc232d60-5cf9-4c2d-832c-4b046e31c941}:c:\users\sema gurol\documents\github\semorder\semorder\library\semorder.model\bin\debug\netcoreapp3.1\semorder.model.dll
+++Context
+i:{0ab1045d-2a3e-455c-8ebc-82d342c8bc28}:c:\users\sema gurol\documents\github\semorder\semorder\library\semorder.model\context\
+++DataContext.cs
+i:{0ab1045d-2a3e-455c-8ebc-82d342c8bc28}:c:\users\sema gurol\documents\github\semorder\semorder\library\semorder.model\context\datacontext.cs
+++DependencyResolver.cs
+i:{0ab1045d-2a3e-455c-8ebc-82d342c8bc28}:c:\users\sema gurol\documents\github\semorder\semorder\library\semorder.model\context\dependencyresolver.cs
+++DesignTimeDataContextFactory.cs
+i:{0ab1045d-2a3e-455c-8ebc-82d342c8bc28}:c:\users\sema gurol\documents\github\semorder\semorder\library\semorder.model\context\designtimedatacontextfactory.cs
+++Entities
+i:{0ab1045d-2a3e-455c-8ebc-82d342c8bc28}:c:\users\sema gurol\documents\github\semorder\semorder\library\semorder.model\entities\
+++Category.cs
+i:{0ab1045d-2a3e-455c-8ebc-82d342c8bc28}:c:\users\sema gurol\documents\github\semorder\semorder\library\semorder.model\entities\category.cs
+++Food.cs
+i:{0ab1045d-2a3e-455c-8ebc-82d342c8bc28}:c:\users\sema gurol\documents\github\semorder\semorder\library\semorder.model\entities\food.cs
+++Order.cs
+i:{0ab1045d-2a3e-455c-8ebc-82d342c8bc28}:c:\users\sema gurol\documents\github\semorder\semorder\library\semorder.model\entities\order.cs
+++Reservation.cs
+i:{0ab1045d-2a3e-455c-8ebc-82d342c8bc28}:c:\users\sema gurol\documents\github\semorder\semorder\library\semorder.model\entities\reservation.cs
+++Table.cs
+i:{0ab1045d-2a3e-455c-8ebc-82d342c8bc28}:c:\users\sema gurol\documents\github\semorder\semorder\library\semorder.model\entities\table.cs
+++User.cs
+i:{0ab1045d-2a3e-455c-8ebc-82d342c8bc28}:c:\users\sema gurol\documents\github\semorder\semorder\library\semorder.model\entities\user.cs
+++BaseMap.cs
+i:{0ab1045d-2a3e-455c-8ebc-82d342c8bc28}:c:\users\sema gurol\documents\github\semorder\semorder\library\semorder.model\map\base\basemap.cs
+++CategoryMap.cs
+i:{0ab1045d-2a3e-455c-8ebc-82d342c8bc28}:c:\users\sema gurol\documents\github\semorder\semorder\library\semorder.model\map\categorymap.cs
+++FoodMap.cs
+i:{0ab1045d-2a3e-455c-8ebc-82d342c8bc28}:c:\users\sema gurol\documents\github\semorder\semorder\library\semorder.model\map\foodmap.cs
+++OrderMap.cs
+i:{0ab1045d-2a3e-455c-8ebc-82d342c8bc28}:c:\users\sema gurol\documents\github\semorder\semorder\library\semorder.model\map\ordermap.cs
+++ReservationMap.cs
+i:{0ab1045d-2a3e-455c-8ebc-82d342c8bc28}:c:\users\sema gurol\documents\github\semorder\semorder\library\semorder.model\map\reservationmap.cs
+++TableMap.cs
+i:{0ab1045d-2a3e-455c-8ebc-82d342c8bc28}:c:\users\sema gurol\documents\github\semorder\semorder\library\semorder.model\map\tablemap.cs
+++UserMap.cs
+i:{0ab1045d-2a3e-455c-8ebc-82d342c8bc28}:c:\users\sema gurol\documents\github\semorder\semorder\library\semorder.model\map\usermap.cs
+++Migrations
+i:{0ab1045d-2a3e-455c-8ebc-82d342c8bc28}:c:\users\sema gurol\documents\github\semorder\semorder\library\semorder.model\migrations\
+++20220718095715_createdb.cs
+++20220719072021_activity.cs
+++20220719072021_activity.Designer.cs
+++DataContextModelSnapshot.cs
+i:{0ab1045d-2a3e-455c-8ebc-82d342c8bc28}:c:\users\sema gurol\documents\github\semorder\semorder\library\semorder.model\migrations\datacontextmodelsnapshot.cs
+++SeedData
+i:{0ab1045d-2a3e-455c-8ebc-82d342c8bc28}:c:\users\sema gurol\documents\github\semorder\semorder\library\semorder.model\seeddata\
+++UserSeedData.cs
+i:{0ab1045d-2a3e-455c-8ebc-82d342c8bc28}:c:\users\sema gurol\documents\github\semorder\semorder\library\semorder.model\seeddata\userseeddata.cs
+++Services
+i:{0ab1045d-2a3e-455c-8ebc-82d342c8bc28}:c:\users\sema gurol\documents\github\semorder\semorder\library\semorder.model\services\
+++ConfigurationService
+i:{0ab1045d-2a3e-455c-8ebc-82d342c8bc28}:c:\users\sema gurol\documents\github\semorder\semorder\library\semorder.model\services\configurationservice\
+++ConfigurationService.cs
+i:{0ab1045d-2a3e-455c-8ebc-82d342c8bc28}:c:\users\sema gurol\documents\github\semorder\semorder\library\semorder.model\services\configurationservice\configurationservice.cs
+++IConfigurationService.cs
+i:{0ab1045d-2a3e-455c-8ebc-82d342c8bc28}:c:\users\sema gurol\documents\github\semorder\semorder\library\semorder.model\services\configurationservice\iconfigurationservice.cs
+++EnvironmentService
+i:{0ab1045d-2a3e-455c-8ebc-82d342c8bc28}:c:\users\sema gurol\documents\github\semorder\semorder\library\semorder.model\services\environmentservice\
+++EnvironmentService.cs
+i:{0ab1045d-2a3e-455c-8ebc-82d342c8bc28}:c:\users\sema gurol\documents\github\semorder\semorder\library\semorder.model\services\environmentservice\environmentservice.cs
+++IEnvironmentService.cs
+i:{0ab1045d-2a3e-455c-8ebc-82d342c8bc28}:c:\users\sema gurol\documents\github\semorder\semorder\library\semorder.model\services\environmentservice\ienvironmentservice.cs
+++20220718095715_createdb.Designer.cs
+++Microsoft.AspNetCore.Http (2.2.2)
+i:{0ab1045d-2a3e-455c-8ebc-82d342c8bc28}:>733
+++Microsoft.EntityFrameworkCore.Tools (3.1.11)
+i:{0ab1045d-2a3e-455c-8ebc-82d342c8bc28}:>735
+i:{fc232d60-5cf9-4c2d-832c-4b046e31c941}:>731
+++Microsoft.Extensions.Configuration (3.1.11)
+i:{0ab1045d-2a3e-455c-8ebc-82d342c8bc28}:>734
+++Microsoft.Extensions.Configuration.EnvironmentVariables (3.1.11)
+i:{0ab1045d-2a3e-455c-8ebc-82d342c8bc28}:>719
+++Microsoft.Extensions.Configuration.FileExtensions (3.1.11)
+i:{0ab1045d-2a3e-455c-8ebc-82d342c8bc28}:>723
+++Microsoft.Extensions.Configuration.Json (3.1.11)
+i:{0ab1045d-2a3e-455c-8ebc-82d342c8bc28}:>730
+++SemOrder.Service
+i:{2a391455-1c7f-472c-94e5-504f043d9207}:SemOrder.Service
+i:{fc232d60-5cf9-4c2d-832c-4b046e31c941}:c:\users\sema gurol\documents\github\semorder\semorder\library\semorder.service\semorder.service.csproj
+++Repository.cs
+i:{8ee4d258-0793-4b06-a80d-64f7cf4330d9}:c:\users\sema gurol\documents\github\semorder\semorder\library\semorder.service\repository\base\repository.cs
+++CategoryRepository.cs
+i:{8ee4d258-0793-4b06-a80d-64f7cf4330d9}:c:\users\sema gurol\documents\github\semorder\semorder\library\semorder.service\repository\category\categoryrepository.cs
+++ICategoryRepository.cs
+i:{8ee4d258-0793-4b06-a80d-64f7cf4330d9}:c:\users\sema gurol\documents\github\semorder\semorder\library\semorder.service\repository\category\icategoryrepository.cs
+++FoodRepository.cs
+i:{8ee4d258-0793-4b06-a80d-64f7cf4330d9}:c:\users\sema gurol\documents\github\semorder\semorder\library\semorder.service\repository\food\foodrepository.cs
+++IFoodRepository.cs
+i:{8ee4d258-0793-4b06-a80d-64f7cf4330d9}:c:\users\sema gurol\documents\github\semorder\semorder\library\semorder.service\repository\food\ifoodrepository.cs
+++IOrderRepository.cs
+i:{8ee4d258-0793-4b06-a80d-64f7cf4330d9}:c:\users\sema gurol\documents\github\semorder\semorder\library\semorder.service\repository\order\iorderrepository.cs
+++OrderRepository.cs
+i:{8ee4d258-0793-4b06-a80d-64f7cf4330d9}:c:\users\sema gurol\documents\github\semorder\semorder\library\semorder.service\repository\order\orderrepository.cs
+++IReservationRepository.cs
+i:{8ee4d258-0793-4b06-a80d-64f7cf4330d9}:c:\users\sema gurol\documents\github\semorder\semorder\library\semorder.service\repository\reservation\ireservationrepository.cs
+++ReservationRepository.cs
+i:{8ee4d258-0793-4b06-a80d-64f7cf4330d9}:c:\users\sema gurol\documents\github\semorder\semorder\library\semorder.service\repository\reservation\reservationrepository.cs
+++ITableRepository.cs
+i:{8ee4d258-0793-4b06-a80d-64f7cf4330d9}:c:\users\sema gurol\documents\github\semorder\semorder\library\semorder.service\repository\table\itablerepository.cs
+++TableRepository.cs
+i:{8ee4d258-0793-4b06-a80d-64f7cf4330d9}:c:\users\sema gurol\documents\github\semorder\semorder\library\semorder.service\repository\table\tablerepository.cs
+++IUserRepository.cs
+i:{8ee4d258-0793-4b06-a80d-64f7cf4330d9}:c:\users\sema gurol\documents\github\semorder\semorder\library\semorder.service\repository\user\iuserrepository.cs
+++UserRepository.cs
+i:{8ee4d258-0793-4b06-a80d-64f7cf4330d9}:c:\users\sema gurol\documents\github\semorder\semorder\library\semorder.service\repository\user\userrepository.cs
+++Presentation
+i:{00000000-0000-0000-0000-000000000000}:Presentation
+++SemOrder.API
+i:{9229190b-8693-42fa-8194-6f59cf8ef40b}:SemOrder.API
+++Connected Services 
+i:{fc232d60-5cf9-4c2d-832c-4b046e31c941}:>693
+i:{4b660c31-0014-48d7-ace3-6463e33b5c2d}:>692
+++Properties
+i:{fc232d60-5cf9-4c2d-832c-4b046e31c941}:c:\users\sema gurol\documents\github\semorder\semorder\presentation\semorder.api\properties\
+i:{4b660c31-0014-48d7-ace3-6463e33b5c2d}:c:\users\sema gurol\documents\github\semorder\semorder\presentation\semorder.web.ui\properties\
+++launchSettings.json
+i:{fc232d60-5cf9-4c2d-832c-4b046e31c941}:c:\users\sema gurol\documents\github\semorder\semorder\presentation\semorder.api\properties\launchsettings.json
+i:{4b660c31-0014-48d7-ace3-6463e33b5c2d}:c:\users\sema gurol\documents\github\semorder\semorder\presentation\semorder.web.ui\properties\launchsettings.json
+++Controllers
+i:{fc232d60-5cf9-4c2d-832c-4b046e31c941}:c:\users\sema gurol\documents\github\semorder\semorder\presentation\semorder.api\controllers\
+++BaseApiController.cs
+i:{fc232d60-5cf9-4c2d-832c-4b046e31c941}:c:\users\sema gurol\documents\github\semorder\semorder\presentation\semorder.api\controllers\base\baseapicontroller.cs
+++Infrastructor
+i:{fc232d60-5cf9-4c2d-832c-4b046e31c941}:c:\users\sema gurol\documents\github\semorder\semorder\presentation\semorder.api\infrastructor\
+++Mapper
+i:{fc232d60-5cf9-4c2d-832c-4b046e31c941}:c:\users\sema gurol\documents\github\semorder\semorder\presentation\semorder.api\infrastructor\mapper\
+++BookingMapper.cs
+++CategoryMapper.cs
+i:{fc232d60-5cf9-4c2d-832c-4b046e31c941}:c:\users\sema gurol\documents\github\semorder\semorder\presentation\semorder.api\infrastructor\mapper\categorymapper.cs
+++FoodMapper.cs
+i:{fc232d60-5cf9-4c2d-832c-4b046e31c941}:c:\users\sema gurol\documents\github\semorder\semorder\presentation\semorder.api\infrastructor\mapper\foodmapper.cs
+++OrderMapper.cs
+i:{fc232d60-5cf9-4c2d-832c-4b046e31c941}:c:\users\sema gurol\documents\github\semorder\semorder\presentation\semorder.api\infrastructor\mapper\ordermapper.cs
+++TableMapper.cs
+i:{fc232d60-5cf9-4c2d-832c-4b046e31c941}:c:\users\sema gurol\documents\github\semorder\semorder\presentation\semorder.api\infrastructor\mapper\tablemapper.cs
+++UserMapper.cs
+i:{fc232d60-5cf9-4c2d-832c-4b046e31c941}:c:\users\sema gurol\documents\github\semorder\semorder\presentation\semorder.api\infrastructor\mapper\usermapper.cs
+++Model
+i:{fc232d60-5cf9-4c2d-832c-4b046e31c941}:c:\users\sema gurol\documents\github\semorder\semorder\presentation\semorder.api\infrastructor\model\
+++ApiWorkContext.cs
+i:{fc232d60-5cf9-4c2d-832c-4b046e31c941}:c:\users\sema gurol\documents\github\semorder\semorder\presentation\semorder.api\infrastructor\model\apiworkcontext.cs
+++appsettings.json
+i:{fc232d60-5cf9-4c2d-832c-4b046e31c941}:c:\users\sema gurol\documents\github\semorder\semorder\presentation\semorder.api\appsettings.json
+i:{4b660c31-0014-48d7-ace3-6463e33b5c2d}:c:\users\sema gurol\documents\github\semorder\semorder\presentation\semorder.web.ui\appsettings.json
+++appsettings.Development.json
+i:{fc232d60-5cf9-4c2d-832c-4b046e31c941}:c:\users\sema gurol\documents\github\semorder\semorder\presentation\semorder.api\appsettings.development.json
+i:{4b660c31-0014-48d7-ace3-6463e33b5c2d}:c:\users\sema gurol\documents\github\semorder\semorder\presentation\semorder.web.ui\appsettings.development.json
+++Program.cs
+i:{fc232d60-5cf9-4c2d-832c-4b046e31c941}:c:\users\sema gurol\documents\github\semorder\semorder\presentation\semorder.api\program.cs
+i:{4b660c31-0014-48d7-ace3-6463e33b5c2d}:c:\users\sema gurol\documents\github\semorder\semorder\presentation\semorder.web.ui\program.cs
+++Startup.cs
+i:{fc232d60-5cf9-4c2d-832c-4b046e31c941}:c:\users\sema gurol\documents\github\semorder\semorder\presentation\semorder.api\startup.cs
+i:{4b660c31-0014-48d7-ace3-6463e33b5c2d}:c:\users\sema gurol\documents\github\semorder\semorder\presentation\semorder.web.ui\startup.cs
+++No service dependencies discovered
+i:{fc232d60-5cf9-4c2d-832c-4b046e31c941}:>695
+i:{4b660c31-0014-48d7-ace3-6463e33b5c2d}:>694
+++Microsoft.AspNetCore.Analyzers
+i:{fc232d60-5cf9-4c2d-832c-4b046e31c941}:c:\program files\dotnet\sdk\6.0.203\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.analyzers.dll
+i:{4b660c31-0014-48d7-ace3-6463e33b5c2d}:c:\program files\dotnet\sdk\6.0.203\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.analyzers.dll
+++Microsoft.AspNetCore.Components.Analyzers
+i:{fc232d60-5cf9-4c2d-832c-4b046e31c941}:c:\program files\dotnet\sdk\6.0.203\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.components.analyzers.dll
+i:{4b660c31-0014-48d7-ace3-6463e33b5c2d}:c:\program files\dotnet\sdk\6.0.203\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.components.analyzers.dll
+++Microsoft.AspNetCore.Mvc.Analyzers
+i:{fc232d60-5cf9-4c2d-832c-4b046e31c941}:c:\program files\dotnet\sdk\6.0.203\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.mvc.analyzers.dll
+i:{4b660c31-0014-48d7-ace3-6463e33b5c2d}:c:\program files\dotnet\sdk\6.0.203\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.mvc.analyzers.dll
+++Microsoft.AspNetCore.App
+i:{fc232d60-5cf9-4c2d-832c-4b046e31c941}:c:\users\sema gurol\documents\github\semorder\semorder\presentation\semorder.api\microsoft.aspnetcore.app
+i:{4b660c31-0014-48d7-ace3-6463e33b5c2d}:c:\users\sema gurol\documents\github\semorder\semorder\presentation\semorder.web.ui\microsoft.aspnetcore.app
+++Microsoft.AspNetCore.Authentication.JwtBearer (3.1.11)
+i:{fc232d60-5cf9-4c2d-832c-4b046e31c941}:>1195
+++Microsoft.Extensions.DependencyInjection (3.1.11)
+i:{fc232d60-5cf9-4c2d-832c-4b046e31c941}:>1191
+++Swashbuckle.AspNetCore.Swagger (6.2.3)
+i:{fc232d60-5cf9-4c2d-832c-4b046e31c941}:>1197
+++Swashbuckle.AspNetCore.SwaggerGen (6.2.3)
+i:{fc232d60-5cf9-4c2d-832c-4b046e31c941}:>1196
+++Swashbuckle.AspNetCore.SwaggerUI (6.2.3)
+i:{fc232d60-5cf9-4c2d-832c-4b046e31c941}:>1198
+++SemOrder.WEB.UI
+i:{9229190b-8693-42fa-8194-6f59cf8ef40b}:SemOrder.WEB.UI
+++ReservationMapper.cs
+i:{fc232d60-5cf9-4c2d-832c-4b046e31c941}:c:\users\sema gurol\documents\github\semorder\semorder\presentation\semorder.api\infrastructor\mapper\reservationmapper.cs
+++20220719141639_reservation.cs
+++20220719141639_reservation.Designer.cs
+++20220719141816_createdb.cs
+i:{0ab1045d-2a3e-455c-8ebc-82d342c8bc28}:c:\users\sema gurol\documents\github\semorder\semorder\library\semorder.model\migrations\20220719141816_createdb.cs
+++20220719141816_createdb.Designer.cs
+i:{0ab1045d-2a3e-455c-8ebc-82d342c8bc28}:c:\users\sema gurol\documents\github\semorder\semorder\library\semorder.model\migrations\20220719141816_createdb.designer.cs

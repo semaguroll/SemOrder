@@ -1,4 +1,5 @@
 ﻿using SemOrder.Common.DTOs.Base;
+using SemOrder.Common.Models;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -14,5 +15,8 @@ namespace SemOrder.Common.DTOs.User
         public string Phone { get; set; }
         public string Email { get; set; }
         public string Password { get; set; }
+        public DateTime? CreatedDate { get; set; }
+
+        public GetAccessToken AccessToken { get; set; }
     }
 }
