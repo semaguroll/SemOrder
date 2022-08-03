@@ -5,6 +5,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Migrations\20220802073631_orderchanged.cs" />
+    <Compile Remove="Migrations\20220802073631_orderchanged.Designer.cs" />
+    <Compile Remove="Migrations\20220802074646_a.cs" />
+    <Compile Remove="Migrations\20220802074646_a.Designer.cs" />
+    <Compile Remove="Migrations\20220802075922_orderchanged.cs" />
+    <Compile Remove="Migrations\20220802075922_orderchanged.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.2.2" />
     <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="3.1.11" />

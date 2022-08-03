@@ -25,10 +25,7 @@ namespace SemOrder.Model.Map
                 .WithMany(c => c.Foods)
                 .HasForeignKey(f => f.CategoryId);
 
-                entity
-                 .HasOne(f => f.Order)
-                 .WithMany(o => o.Foods)
-                 .HasForeignKey(f => f.OrderId);
+           
 
             });
         }

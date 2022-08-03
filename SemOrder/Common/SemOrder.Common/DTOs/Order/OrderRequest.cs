@@ -14,5 +14,7 @@ namespace SemOrder.Common.DTOs.Order
         public Guid UserId { get; set; }
 
         public Guid TableId { get; set; }
+
+        public Guid FoodId { get; set; }
     }
 }

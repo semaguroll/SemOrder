@@ -12,7 +12,7 @@ namespace SemOrder.Common.DTOs.Reservation
         public string ReservationTime { get; set; }
         public int NumberOfPerson { get; set; }
 
-        public Guid CustomerId { get; set; }
+        public Guid UserId { get; set; }
         public Guid TableId { get; set; }
     }
 }

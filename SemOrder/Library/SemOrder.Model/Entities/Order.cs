@@ -7,10 +7,6 @@ namespace SemOrder.Model.Entities
 {
     public class Order : CoreEntity
     {
-        public Order()
-        {
-            Foods = new HashSet<Food>();
-        }
         public int Quantity { get; set; }
         public float TotalPrice { get; set; }
         public DateTime OrderDate { get; set; }
@@ -21,6 +17,7 @@ namespace SemOrder.Model.Entities
         public Guid TableId { get; set; }
         public Table Table { get; set; }
 
-        public ICollection<Food> Foods { get; set; }
+        public Guid FoodId { get; set; }
+        public Food Food { get; set; }
     }
 }

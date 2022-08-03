@@ -23,6 +23,7 @@ namespace SemOrder.Core.Repository
         IQueryable<T> Table { get; }
         IQueryable<T> TableNoTracking { get; }
         Task<bool> Activate(Guid id);
+        Task<bool> Inactivate(Guid id);
         Task<bool> Any(Expression<Func<T, bool>> exp);
         Task<int> Save();
     }

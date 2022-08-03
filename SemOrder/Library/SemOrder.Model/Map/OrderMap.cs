@@ -16,7 +16,7 @@ namespace SemOrder.Model.Map
                 entity.HasExtended();
 
                 entity.Property(x => x.Quantity).HasConversion(typeof(int)).IsRequired(true);
-                entity.Property(x => x.TotalPrice).HasConversion(typeof(int)).IsRequired(true);
+                entity.Property(x => x.TotalPrice).IsRequired(true);
                 entity.Property(x => x.OrderDate).HasConversion(typeof(DateTime)).IsRequired(true);
 
                 entity
@@ -28,6 +28,12 @@ namespace SemOrder.Model.Map
                  .HasOne(o => o.Table)
                  .WithMany(t => t.Orders)
                  .HasForeignKey(o => o.TableId);
+
+                entity
+                 .HasOne(f => f.Food)
+                 .WithMany(o => o.Orders)
+                 .HasForeignKey(f => f.FoodId);
+
             });
         }
     }

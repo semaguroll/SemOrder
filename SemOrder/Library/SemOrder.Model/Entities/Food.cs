@@ -7,6 +7,10 @@ namespace SemOrder.Model.Entities
 {
     public class Food : CoreEntity
     {
+        public Food()
+        {
+            Orders = new HashSet<Order>();
+        }
         public string Name { get; set; }
         public string Description { get; set; }
         public string ImageUrl { get; set; }
@@ -15,7 +19,7 @@ namespace SemOrder.Model.Entities
         public Guid CategoryId { get; set; }
         public Category Category { get; set; }
 
-        public Guid OrderId { get; set; }
-        public Order Order { get; set; }
+        public ICollection<Order> Orders { get; set; }
+    
     }
 }

@@ -1,9 +1,8 @@
 ﻿using SemOrder.Common.DTOs.Base;
+using SemOrder.Common.DTOs.Food;
 using SemOrder.Common.DTOs.Table;
 using SemOrder.Common.DTOs.User;
 using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace SemOrder.Common.DTOs.Order
 {
@@ -19,5 +18,8 @@ namespace SemOrder.Common.DTOs.Order
 
         public Guid TableId { get; set; }
         public TableRequest Table { get; set; }
+
+        public Guid FoodId { get; set; }
+        public FoodRequest Food { get; set; }
     }
 }

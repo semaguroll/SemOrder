@@ -202,6 +202,16 @@ namespace SemOrder.Service.Repository.Base
                 return false;
 
         }
+        public async Task<bool> Inactivate(Guid id)
+        {
+            T inactivated = await GetById(id);
+            inactivated.Status = Status.None;
+            if (await Update(inactivated) != null)
+                return true;
+            else
+                return false;
+
+        }
         public async Task<int> Save() => await _context.SaveChangesAsync();
 
 
