@@ -13,6 +13,5 @@ namespace SemOrder.Common.DTOs.Food
         public float Price { get; set; }
 
         public Guid CategoryId { get; set; }
-        public Guid OrderId { get; set; }
     }
 }

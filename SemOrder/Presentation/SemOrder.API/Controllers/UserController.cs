@@ -120,5 +120,13 @@ namespace SemOrder.API.Controllers
                 return new WebApiResponse<bool>(true, "Success", true);
             return new WebApiResponse<bool>(false, "Error");
         }
+        [HttpGet("inactivate/{id}")]
+        public async Task<ActionResult<WebApiResponse<bool>>> InactivateUser(Guid id)
+        {
+            var activeUser = await _userRepo.Inactivate(id);
+            if (activeUser)
+                return new WebApiResponse<bool>(true, "Success", true);
+            return new WebApiResponse<bool>(false, "Error");
+        }
     }
 }

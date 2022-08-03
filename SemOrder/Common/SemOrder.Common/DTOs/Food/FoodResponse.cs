@@ -16,8 +16,5 @@ namespace SemOrder.Common.DTOs.Food
 
         public Guid CategoryId { get; set; }
         public CategoryRequest Category { get; set; }
-
-        public Guid OrderId { get; set; }
-        public OrderResponse Order { get; set; }
     }
 }

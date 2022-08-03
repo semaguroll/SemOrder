@@ -84,20 +84,13 @@ namespace SemOrder.API.Controllers
         }
 
         [HttpDelete("{id}")]
-        public async Task<ActionResult<WebApiResponse<FoodResponse>>> DeleteFood(Guid id)
+        public async Task<ActionResult<WebApiResponse<bool>>> DeleteFood(Guid id)
         {
             var food = await _foodRepo.GetById(id);
-            if (food != null)
-            {
-                var deletedFood = await _foodRepo.Remove(food);
-                if (deletedFood)
-                {
-                    var foodResponse = _mapper.Map<FoodResponse>(deletedFood);
-                    return new WebApiResponse<FoodResponse>(true, "Success",foodResponse);
-                }
-                return new WebApiResponse<FoodResponse>(false, "Error");
-            }
-            return new WebApiResponse<FoodResponse>(false, "Error");
+            var deletedFood = await _foodRepo.Remove(food);
+            if (deletedFood)
+                return new WebApiResponse<bool>(true, "Success", true);
+            return new WebApiResponse<bool>(false, "Error");
         }
 
         [HttpGet("getactive")]

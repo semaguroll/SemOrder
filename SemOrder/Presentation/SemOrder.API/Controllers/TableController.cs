@@ -57,7 +57,7 @@ namespace SemOrder.API.Controllers
         [HttpPut("{id}")]
         public async Task<ActionResult<WebApiResponse<TableRequest>>> UpdateTable(Guid id, TableRequest request)
         {
-            if (id == request.ID)
+            if (id != request.ID)
                 return BadRequest();
             try
             {

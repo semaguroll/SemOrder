@@ -34,7 +34,6 @@ namespace SemOrder.API.Controllers
                 return new WebApiResponse<List<CategoryResponse>>(true, "Success", categoryResult);
             return new WebApiResponse<List<CategoryResponse>>(false, "Error");
         }
-
         [HttpGet("{id}")]
         public async Task<ActionResult<WebApiResponse<CategoryResponse>>> GetCategory(Guid id)
         {
