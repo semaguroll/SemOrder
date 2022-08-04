@@ -9,6 +9,7 @@ namespace SemOrder.Common.Models
         public bool IsSuccess { get; set; }
         public string ResultMessage { get; set; }
         public T ResultData { get; set; }
+
         public WebApiResponse()
         {
 

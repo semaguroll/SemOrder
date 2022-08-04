@@ -1,4 +1,5 @@
-﻿using SemOrder.Core.Entity;
+﻿using SemOrder.Common.Enums;
+using SemOrder.Core.Entity;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -15,6 +16,8 @@ namespace SemOrder.Model.Entities
         public string Description { get; set; }
         public string ImageUrl { get; set; }
         public float Price { get; set; }
+
+        public FoodTypes Type { get; set; }
 
         public Guid CategoryId { get; set; }
         public Category Category { get; set; }

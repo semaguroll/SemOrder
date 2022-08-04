@@ -21,41 +21,45 @@ namespace SemOrder.API.Controllers
     [ApiController]
     public class AccountController : ControllerBase
     {
-        private readonly IUserRepository _userRepo;
+        private readonly IUserRepository _userRepository;
         private readonly IMapper _mapper;
         private readonly IConfiguration _configuration;
-        public AccountController(IUserRepository userRepo, IMapper mapper, IConfiguration configuration)
+
+        public AccountController(
+            IUserRepository userRepository,
+            IMapper mapper,
+            IConfiguration configuration)
         {
-            _userRepo = userRepo;
+            _userRepository = userRepository;
             _mapper = mapper;
             _configuration = configuration;
         }
 
+        //http://localhost:5000/account/login?Email=admin@admin.com&Password=123
         [HttpGet("login")]
         public async Task<WebApiResponse<UserResponse>> Login([FromQuery] LoginRequest request)
         {
             if (ModelState.IsValid)
             {
-                var data = await _userRepo.GetByDefault(x => x.Email == request.Email && x.Password == request.Password);
-                if (data != null)
+                var result = await _userRepository.GetByDefault(x => x.Email == request.Email && x.Password == request.Password);
+                if (result != null)
                 {
-                    UserResponse ur = _mapper.Map<UserResponse>(data);
-                    ur.AccessToken = SetAccessToken(ur, request.Password);
-                    return new WebApiResponse<UserResponse>(true, "Success", ur);
+                    UserResponse rm = _mapper.Map<UserResponse>(result);
+                    rm.AccessToken = SetAccessToken(rm, request.Password);
+                    return new WebApiResponse<UserResponse>(true, "Success", rm);
                 }
-            }               
+            }
             return new WebApiResponse<UserResponse>(false,
-              ModelState.Values.SelectMany(x => x.Errors).Select(x => x.ErrorMessage).ToList().ToString());
-
+                ModelState.Values.SelectMany(x => x.Errors).Select(x => x.ErrorMessage).ToList().ToString());
         }
 
-        private GetAccessToken SetAccessToken(UserResponse ur,string password)
+        private GetAccessToken SetAccessToken(UserResponse rm, string password)
         {
             var claims = new List<Claim>
             {
                 //using System.IdentityModel.Tokens.Jwt;
-                new Claim(JwtRegisteredClaimNames.Jti,ur.ID.ToString()),
-                new Claim(JwtRegisteredClaimNames.Email,ur.Email)
+                new Claim(JwtRegisteredClaimNames.Jti,rm.ID.ToString()),
+                new Claim(JwtRegisteredClaimNames.Email,rm.Email)
             };
 
             //JWT
@@ -78,9 +82,10 @@ namespace SemOrder.API.Controllers
                 TokenType = "SemOrderAccessToken",
                 AccessToken = new JwtSecurityTokenHandler().WriteToken(jwtSecurityToken),
                 Expires = ticks,
-                RefreshToken = $"{ur.Email}_{password}_{ticks}".Encrypt()
+                RefreshToken = $"{rm.Email}_{password}_{ticks}".Encrypt()
             };
         }
+
         [HttpGet("refreshtoken")]
         public async Task<WebApiResponse<GetAccessToken>> RefreshToken([FromQuery] RefreshToken request)
         {
@@ -93,7 +98,7 @@ namespace SemOrder.API.Controllers
             if (userInfo.Length < 3 || userInfo[0] != request.Email)
                 throw new Exception("Geçersiz Token");
 
-            var result = await _userRepo.GetByDefault(x => x.Email == userInfo[0] && x.Password == userInfo[1]);
+            var result = await _userRepository.GetByDefault(x => x.Email == userInfo[0] && x.Password == userInfo[1]);
             if (result != null)
             {
                 UserResponse rm = _mapper.Map<UserResponse>(result);

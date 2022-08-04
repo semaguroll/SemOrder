@@ -19,6 +19,7 @@ namespace SemOrder.Model.Map
                 entity.Property(x => x.Description).HasMaxLength(300).IsRequired(false);
                 entity.Property(x => x.Price).IsRequired(true);
                 entity.Property(x => x.ImageUrl).HasMaxLength(200).IsRequired(false);
+                entity.Property(x => x.Type).IsRequired(true);
 
                 entity
                 .HasOne(f => f.Category)

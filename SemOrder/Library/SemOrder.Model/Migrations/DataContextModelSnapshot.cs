@@ -74,6 +74,9 @@ namespace SemOrder.Model.Migrations
                     b.Property<int>("Status")
                         .HasColumnType("int");
 
+                    b.Property<int>("Type")
+                        .HasColumnType("int");
+
                     b.HasKey("ID");
 
                     b.HasIndex("CategoryId");
@@ -102,8 +105,8 @@ namespace SemOrder.Model.Migrations
                     b.Property<Guid>("TableId")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<int>("TotalPrice")
-                        .HasColumnType("int");
+                    b.Property<float>("TotalPrice")
+                        .HasColumnType("real");
 
                     b.Property<Guid>("UserId")
                         .HasColumnType("uniqueidentifier");
@@ -219,7 +222,7 @@ namespace SemOrder.Model.Migrations
                     b.HasData(
                         new
                         {
-                            ID = new Guid("b43869c2-e8be-4ced-ae13-7b3555f18310"),
+                            ID = new Guid("fbef8107-492c-4c8f-ac84-d1fee5f56bc2"),
                             Email = "admin@admin.com",
                             FirstName = "Admin",
                             ImageUrl = "/",
