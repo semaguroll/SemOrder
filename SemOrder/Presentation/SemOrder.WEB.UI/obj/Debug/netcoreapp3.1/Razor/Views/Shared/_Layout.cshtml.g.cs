@@ -19,8 +19,15 @@ using SemOrder.WEB.UI.Models.AccountViewModels;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 2 "C:\Users\Sema Gurol\Documents\GitHub\SemOrder\SemOrder\Presentation\SemOrder.WEB.UI\Views\_ViewImports.cshtml"
+using SemOrder.WEB.UI.Areas.Admin.Models.UserViewModels;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"18027f1f601a79719d54122c25641ba1f005cd64", @"/Views/Shared/_Layout.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"1830f741027ceecc922b9acda9ebcdf3e81acd92", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"e7036b23eb3899152b393b2332a6cab940cf5b12", @"/Views/_ViewImports.cshtml")]
     #nullable restore
     public class Views_Shared__Layout : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     #nullable disable
@@ -51,7 +58,7 @@ using SemOrder.WEB.UI.Models.AccountViewModels;
         public async override global::System.Threading.Tasks.Task ExecuteAsync()
         {
             WriteLiteral("<!DOCTYPE html>\r\n\r\n<html>\r\n");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "18027f1f601a79719d54122c25641ba1f005cd643208", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "18027f1f601a79719d54122c25641ba1f005cd643456", async() => {
                 WriteLiteral("\r\n    <meta name=\"viewport\" content=\"width=device-width\" />\r\n    <title>");
 #nullable restore
 #line 6 "C:\Users\Sema Gurol\Documents\GitHub\SemOrder\SemOrder\Presentation\SemOrder.WEB.UI\Views\Shared\_Layout.cshtml"
@@ -73,7 +80,7 @@ using SemOrder.WEB.UI.Models.AccountViewModels;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "18027f1f601a79719d54122c25641ba1f005cd644518", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "18027f1f601a79719d54122c25641ba1f005cd644766", async() => {
                 WriteLiteral("\r\n    <div>\r\n        ");
 #nullable restore
 #line 10 "C:\Users\Sema Gurol\Documents\GitHub\SemOrder\SemOrder\Presentation\SemOrder.WEB.UI\Views\Shared\_Layout.cshtml"

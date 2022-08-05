@@ -432,3 +432,12 @@ C:\Users\Sema Gurol\Documents\GitHub\SemOrder\SemOrder\Presentation\SemOrder.WEB
 C:\Users\Sema Gurol\Documents\GitHub\SemOrder\SemOrder\Presentation\SemOrder.WEB.UI\bin\Debug\netcoreapp3.1\SemOrder.Model.dll
 C:\Users\Sema Gurol\Documents\GitHub\SemOrder\SemOrder\Presentation\SemOrder.WEB.UI\bin\Debug\netcoreapp3.1\SemOrder.Model.pdb
 C:\Users\Sema Gurol\Documents\GitHub\SemOrder\SemOrder\Presentation\SemOrder.WEB.UI\bin\Debug\netcoreapp3.1\SemOrder.Core.pdb
+C:\Users\Sema Gurol\Documents\GitHub\SemOrder\SemOrder\Presentation\SemOrder.WEB.UI\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Home\Index.cshtml.g.cs
+C:\Users\Sema Gurol\Documents\GitHub\SemOrder\SemOrder\Presentation\SemOrder.WEB.UI\bin\Debug\netcoreapp3.1\bundleconfig.json
+C:\Users\Sema Gurol\Documents\GitHub\SemOrder\SemOrder\Presentation\SemOrder.WEB.UI\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Shared\_AdminLayout.cshtml.g.cs
+C:\Users\Sema Gurol\Documents\GitHub\SemOrder\SemOrder\Presentation\SemOrder.WEB.UI\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\_ViewImports.cshtml.g.cs
+C:\Users\Sema Gurol\Documents\GitHub\SemOrder\SemOrder\Presentation\SemOrder.WEB.UI\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\_ViewStart.cshtml.g.cs
+C:\Users\Sema Gurol\Documents\GitHub\SemOrder\SemOrder\Presentation\SemOrder.WEB.UI\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
+C:\Users\Sema Gurol\Documents\GitHub\SemOrder\SemOrder\Presentation\SemOrder.WEB.UI\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\Sema Gurol\Documents\GitHub\SemOrder\SemOrder\Presentation\SemOrder.WEB.UI\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
+C:\Users\Sema Gurol\Documents\GitHub\SemOrder\SemOrder\Presentation\SemOrder.WEB.UI\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\User\SignUp.cshtml.g.cs

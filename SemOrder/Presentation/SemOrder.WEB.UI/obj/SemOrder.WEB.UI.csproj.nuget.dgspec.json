@@ -297,6 +297,10 @@
               "target": "Package",
               "version": "[3.1.11, )"
             },
+            "Microsoft.AspNetCore.Mvc.TagHelpers": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
             "Microsoft.Extensions.Http.Polly": {
               "target": "Package",
               "version": "[3.1.11, )"

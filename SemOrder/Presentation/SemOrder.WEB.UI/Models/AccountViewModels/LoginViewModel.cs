@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using SemOrder.WEB.UI.Areas.Admin.Models.UserViewModels;
+using System.ComponentModel.DataAnnotations;
 
 namespace SemOrder.WEB.UI.Models.AccountViewModels
 {

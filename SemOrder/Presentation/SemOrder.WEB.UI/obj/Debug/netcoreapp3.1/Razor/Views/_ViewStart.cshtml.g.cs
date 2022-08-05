@@ -19,8 +19,15 @@ using SemOrder.WEB.UI.Models.AccountViewModels;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 2 "C:\Users\Sema Gurol\Documents\GitHub\SemOrder\SemOrder\Presentation\SemOrder.WEB.UI\Views\_ViewImports.cshtml"
+using SemOrder.WEB.UI.Areas.Admin.Models.UserViewModels;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"7091c65830b0329e613be026ede8a57552863778", @"/Views/_ViewStart.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"1830f741027ceecc922b9acda9ebcdf3e81acd92", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"e7036b23eb3899152b393b2332a6cab940cf5b12", @"/Views/_ViewImports.cshtml")]
     #nullable restore
     public class Views__ViewStart : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     #nullable disable
