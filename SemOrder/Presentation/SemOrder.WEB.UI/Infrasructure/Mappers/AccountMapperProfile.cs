@@ -5,9 +5,9 @@ using SemOrder.WEB.UI.Models.AccountViewModels;
 
 namespace SemOrder.WEB.UI.Infrasructure.Mappers
 {
-    public class AccountMapper : Profile
+    public class AccountMapperProfile : Profile
     {
-        public AccountMapper()
+        public AccountMapperProfile()
         {
             CreateMap<LoginViewModel, LoginRequest>()
                 .ReverseMap()

@@ -61,5 +61,11 @@ namespace SemOrder.WEB.UI.Controllers
             }
             return View(request);
         }
+        public async Task<IActionResult> Logout()
+        {
+            HttpContext.Response.Cookies.Delete("SemOrderAccessToken");
+            await HttpContext.SignOutAsync();
+            return RedirectToAction("Index", "Home", new { area = "" });
+        }
     }
 }

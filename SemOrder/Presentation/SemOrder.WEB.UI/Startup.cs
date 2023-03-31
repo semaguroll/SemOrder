@@ -99,6 +99,18 @@ namespace SemOrder.WEB.UI
                 .AddPolicyHandler(Policy.TimeoutAsync<HttpResponseMessage>(TimeSpan.FromSeconds(60)))
                 .AddTransientHttpErrorPolicy(p => p.RetryAsync(3))
                 .AddHttpMessageHandler((s) => s.GetService<AuthTokenHandler>());
+            //Order
+            services.AddRefitClient<IOrderApi>()
+                .ConfigureHttpClient(client => { client.BaseAddress = baseUri; })
+                .AddPolicyHandler(Policy.TimeoutAsync<HttpResponseMessage>(TimeSpan.FromSeconds(60)))
+                .AddTransientHttpErrorPolicy(p => p.RetryAsync(3))
+                .AddHttpMessageHandler((s) => s.GetService<AuthTokenHandler>());
+            //Reservation
+            services.AddRefitClient<IReservationApi>()
+                .ConfigureHttpClient(client => { client.BaseAddress = baseUri; })
+                .AddPolicyHandler(Policy.TimeoutAsync<HttpResponseMessage>(TimeSpan.FromSeconds(60)))
+                .AddTransientHttpErrorPolicy(p => p.RetryAsync(3))
+                .AddHttpMessageHandler((s) => s.GetService<AuthTokenHandler>());
 
             //User
             services.AddRefitClient<IUserApi>()
